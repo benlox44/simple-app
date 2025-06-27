@@ -9,3 +9,8 @@ app.get('/', (req, res) => {
 app.listen(PORT, () => {
   console.log(`App corriendo en el puerto ${PORT}`);
 });
+
+app.get('/nuevo', (req, res) => {
+  res.send('¡Ruta nueva desplegada por CI/CD!');
+});
+
